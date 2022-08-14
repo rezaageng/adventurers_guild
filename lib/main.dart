@@ -1,4 +1,4 @@
-import 'screen/home.dart';
+import 'screens/home.dart';
 import 'theme/dark_theme.dart';
 import 'theme/light_theme.dart';
 import 'package:flutter/material.dart';
