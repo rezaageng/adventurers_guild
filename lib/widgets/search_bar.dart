@@ -16,7 +16,6 @@ class SearchBar extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 16),
             child: TextField(
-              // cursorColor: Theme.of(context).colorScheme.secondary,
               decoration: InputDecoration(
                 hintText: 'Search',
                 filled: true,
