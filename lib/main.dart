@@ -1,4 +1,6 @@
-import 'package:adventurers_guild/screen/home.dart';
+import 'screen/home.dart';
+import 'theme/dark_theme.dart';
+import 'theme/light_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Adventurers\' Guild',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      themeMode: ThemeMode.system,
       home: const Home(),
     );
   }
