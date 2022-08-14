@@ -56,9 +56,25 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/amakumo_peak.png
+    - assets/images/chasm_underground.png
+    - assets/images/chasm.png
+    - assets/images/dragonspine.png
+    - assets/images/enkanomiya.png
+    - assets/images/mt_aocang_cliff.png
+    - assets/images/mt_aocang.png
+    - assets/images/mt_kanna.png
+    - assets/images/mt_yougou.png
+    - assets/images/qingyun_peak.png
+    - assets/images/sangonomiya_shrine.png
+    - assets/images/starfell_lake.png
+    - assets/images/stormterror.png
+    - assets/images/tatarasuna.png
+    - assets/images/thousands_wind.png
+    - assets/images/wind_rise.png
+    - assets/images/wolvedome.png
+    - assets/images/wuwang_hill.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
