@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/categories.dart';
 import '../widgets/search_bar.dart';
 
 class Home extends StatelessWidget {
@@ -11,7 +12,10 @@ class Home extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: ListView(
         physics: const BouncingScrollPhysics(),
-        children: const [SearchBar()],
+        children: const [
+          SearchBar(),
+          Categories(),
+        ],
       ),
     );
   }
