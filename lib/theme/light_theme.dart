@@ -19,4 +19,9 @@ ThemeData lightTheme = ThemeData(
     headline6: TextStyle(color: Colors.black),
   ),
   fontFamily: 'Ubuntu',
+  textSelectionTheme: const TextSelectionThemeData(
+    cursorColor: Colors.orange,
+    selectionColor: Colors.orange,
+    selectionHandleColor: Colors.orange,
+  ),
 );

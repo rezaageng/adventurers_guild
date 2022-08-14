@@ -14,4 +14,9 @@ ThemeData darkTheme = ThemeData(
   canvasColor: const Color.fromRGBO(18, 18, 18, 1),
   cardTheme: const CardTheme(color: Color.fromRGBO(24, 24, 24, 1)),
   fontFamily: 'Ubuntu',
+  textSelectionTheme: const TextSelectionThemeData(
+    cursorColor: Colors.orange,
+    selectionColor: Colors.orange,
+    selectionHandleColor: Colors.orange,
+  ),
 );
