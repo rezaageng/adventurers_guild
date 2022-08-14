@@ -5,13 +5,8 @@ class Explore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Title'),
-      ),
-      body: const Center(
-        child: Text('Explore'),
-      ),
+    return const Center(
+      child: Text('Explore'),
     );
   }
 }
