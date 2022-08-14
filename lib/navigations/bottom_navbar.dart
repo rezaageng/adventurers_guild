@@ -64,8 +64,8 @@ class _BottomNavbarState extends State<BottomNavbar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            activeIcon: Icon(Icons.explore_rounded),
-            icon: Icon(Icons.explore_outlined),
+            activeIcon: Icon(Icons.map_rounded),
+            icon: Icon(Icons.map_outlined),
             label: 'Explore',
           ),
         ],
