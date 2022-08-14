@@ -15,6 +15,7 @@ ThemeData lightTheme = ThemeData(
     ),
   ),
   canvasColor: Colors.white,
+  cardTheme: const CardTheme(color: Color.fromRGBO(245, 245, 245, 1)),
   textTheme: const TextTheme(
     headline6: TextStyle(color: Colors.black),
   ),
