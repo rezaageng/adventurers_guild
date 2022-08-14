@@ -43,7 +43,7 @@ class Categories extends StatelessWidget {
                 context, 'Beaches', Icons.beach_access_rounded, [8, 8]),
             _buildCategory(
                 context, 'Undergrounds', Icons.landslide_rounded, [8, 8]),
-            _buildCategory(context, 'forests', Icons.forest_rounded, [8, 16]),
+            _buildCategory(context, 'Forests', Icons.forest_rounded, [8, 16]),
           ],
         ),
       ),
