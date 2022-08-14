@@ -12,7 +12,7 @@ enum ERegions {
   inazuma,
 }
 
-class DestinasionsModel {
+class DestinationsModel {
   final String id;
   final String title;
   final ECategories category;
@@ -21,7 +21,7 @@ class DestinasionsModel {
   final DateTime duration;
   final String imageUrl;
 
-  DestinasionsModel({
+  DestinationsModel({
     required this.id,
     required this.title,
     required this.category,
