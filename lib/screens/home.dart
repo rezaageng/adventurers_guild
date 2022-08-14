@@ -8,15 +8,12 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16),
-      child: ListView(
-        physics: const BouncingScrollPhysics(),
-        children: const [
-          SearchBar(),
-          Categories(),
-        ],
-      ),
+    return ListView(
+      physics: const BouncingScrollPhysics(),
+      children: const [
+        SearchBar(),
+        Categories(),
+      ],
     );
   }
 }
