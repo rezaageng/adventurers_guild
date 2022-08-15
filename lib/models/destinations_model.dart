@@ -4,6 +4,8 @@ enum ECategories {
   undergrounds,
   forests,
   cliffs,
+  mines,
+  ruins,
 }
 
 enum ERegions {
@@ -18,10 +20,10 @@ class DestinationsModel {
   final ECategories category;
   final ERegions region;
   final String description;
-  final DateTime duration;
+  final int duration;
   final String imageUrl;
 
-  DestinationsModel({
+  const DestinationsModel({
     required this.id,
     required this.title,
     required this.category,
