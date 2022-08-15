@@ -4,6 +4,7 @@
     "navigations",
     "home",
     "models",
-    "helpers"
+    "helpers",
+    "destination"
   ]
 }

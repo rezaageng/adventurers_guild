@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/destinations_model.dart';
+import '../screens/destination.dart';
 
 class ForYouItem extends StatelessWidget {
   final DestinationsModel destination;
@@ -60,9 +61,7 @@ class ForYouItem extends StatelessWidget {
                     Text(
                       destination.region.name[0].toUpperCase() +
                           destination.region.name.substring(1),
-                      style: Theme.of(context).textTheme.subtitle2?.copyWith(
-                            color: Colors.white70,
-                          ),
+                      style: Theme.of(context).textTheme.subtitle2,
                     ),
                   ],
                 ),
@@ -74,7 +73,11 @@ class ForYouItem extends StatelessWidget {
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(
-                    onTap: () {},
+                    enableFeedback: false,
+                    onTap: () => Navigator.of(context).pushNamed(
+                      Destination.routeName,
+                      arguments: destination,
+                    ),
                   ),
                 ),
               ),
