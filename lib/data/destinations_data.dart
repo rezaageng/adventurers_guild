@@ -5,7 +5,7 @@ List<DestinationsModel> destinationsData = [
     id: 'des0',
     title: 'Amakumo Peak',
     category: ECategories.mountains,
-    region: ERegions.liyue,
+    region: ERegions.inazuma,
     description:
         'Amakumo Peak is a subarea in Seirai Island, Inazuma. Long ago, Kanna Kapatcir was slain here, while the power of its lingering hatred and regret was suppressed by wards maintained by the Asase Shrine. During the Seirai Rebellion around 500 years ago, Asase Hibiki unsealed the wards, causing the Thunder Manifestation to appear and devastate the area with a massive Electro storm.',
     duration: 1200,
