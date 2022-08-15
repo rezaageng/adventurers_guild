@@ -1,3 +1,4 @@
+import 'package:adventurers_guild/helpers/helpers.dart';
 import 'package:flutter/material.dart';
 
 import '../models/destinations_model.dart';
@@ -59,8 +60,7 @@ class ForYouItem extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      destination.region.name[0].toUpperCase() +
-                          destination.region.name.substring(1),
+                      Helpers.capitalize(destination.region.name),
                       style: Theme.of(context).textTheme.subtitle2,
                     ),
                   ],
