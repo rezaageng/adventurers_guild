@@ -21,5 +21,6 @@ ThemeData darkTheme = ThemeData(
   ),
   textTheme: const TextTheme(
     caption: TextStyle(height: 1.5),
+    subtitle2: TextStyle(color: Colors.white70),
   ),
 );

@@ -19,6 +19,7 @@ ThemeData lightTheme = ThemeData(
   textTheme: const TextTheme(
     headline6: TextStyle(color: Colors.black),
     caption: TextStyle(height: 1.5),
+    subtitle2: TextStyle(color: Colors.white70),
   ),
   fontFamily: 'Ubuntu',
   textSelectionTheme: const TextSelectionThemeData(
