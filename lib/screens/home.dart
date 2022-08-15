@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
       physics: const BouncingScrollPhysics(),
       children: [
         const SearchBar(),
-        Categories(_onCategoryChanged),
+        Categories(onCategoryTap: _onCategoryChanged, stateCategory: _category),
         ForYou(title: 'For You', destinations: _destinations),
       ],
     );

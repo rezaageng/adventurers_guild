@@ -1,5 +1,5 @@
-import 'package:adventurers_guild/models/destinations_model.dart';
 import 'package:flutter/material.dart';
+import '../models/destinations_model.dart';
 
 class Category extends StatelessWidget {
   final String title;
@@ -8,6 +8,7 @@ class Category extends StatelessWidget {
   final double marginRight;
   final Function onCategoryTap;
   final ECategories category;
+  final ECategories stateCategory;
 
   const Category({
     Key? key,
@@ -17,16 +18,26 @@ class Category extends StatelessWidget {
     this.marginRight = 8,
     required this.onCategoryTap,
     required this.category,
+    required this.stateCategory,
   }) : super(key: key);
+
+  Color _getcolor(BuildContext context) {
+    if (stateCategory == category) {
+      return Theme.of(context).colorScheme.secondary;
+    } else {
+      return Theme.of(context).cardTheme.color as Color;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: marginLeft, right: marginRight),
       child: Material(
-        color: Theme.of(context).cardTheme.color,
+        color: _getcolor(context),
         borderRadius: BorderRadius.circular(16),
         child: InkWell(
+          enableFeedback: false,
           borderRadius: BorderRadius.circular(16),
           onTap: (() => onCategoryTap(category)),
           child: Padding(
