@@ -24,10 +24,25 @@ class Categories extends StatelessWidget {
               icon: Icons.landscape_rounded,
             ),
             Category(
-              title: 'Beaches',
-              icon: Icons.beach_access_rounded,
+              title: 'Islands',
+              icon: Icons.landscape_rounded,
             ),
-            Category(title: 'Undergrounds', icon: Icons.landslide_rounded),
+            Category(
+              title: 'Undergrounds',
+              icon: Icons.landslide_rounded,
+            ),
+            Category(
+              title: 'Cliffs',
+              icon: Icons.landslide_rounded,
+            ),
+            Category(
+              title: 'Mines',
+              icon: Icons.landslide_rounded,
+            ),
+            Category(
+              title: 'Ruins',
+              icon: Icons.flood_rounded,
+            ),
             Category(
               title: 'Forests',
               icon: Icons.forest_rounded,

@@ -1,4 +1,5 @@
 enum ECategories {
+  all,
   mountains,
   islands,
   undergrounds,
