@@ -1,3 +1,4 @@
+import 'package:adventurers_guild/models/destinations_model.dart';
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
@@ -5,6 +6,8 @@ class Category extends StatelessWidget {
   final IconData icon;
   final double marginLeft;
   final double marginRight;
+  final Function onCategoryTap;
+  final ECategories category;
 
   const Category({
     Key? key,
@@ -12,6 +15,8 @@ class Category extends StatelessWidget {
     required this.icon,
     this.marginLeft = 8,
     this.marginRight = 8,
+    required this.onCategoryTap,
+    required this.category,
   }) : super(key: key);
 
   @override
@@ -23,7 +28,7 @@ class Category extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         child: InkWell(
           borderRadius: BorderRadius.circular(16),
-          onTap: () {},
+          onTap: (() => onCategoryTap(category)),
           child: Padding(
             padding: const EdgeInsets.all(12),
             child: Row(
