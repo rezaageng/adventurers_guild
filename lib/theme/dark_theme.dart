@@ -19,4 +19,7 @@ ThemeData darkTheme = ThemeData(
     selectionColor: Colors.orange,
     selectionHandleColor: Colors.orange,
   ),
+  textTheme: const TextTheme(
+    caption: TextStyle(height: 1.5),
+  ),
 );

@@ -18,6 +18,7 @@ ThemeData lightTheme = ThemeData(
   cardTheme: const CardTheme(color: Color.fromRGBO(245, 245, 245, 1)),
   textTheme: const TextTheme(
     headline6: TextStyle(color: Colors.black),
+    caption: TextStyle(height: 1.5),
   ),
   fontFamily: 'Ubuntu',
   textSelectionTheme: const TextSelectionThemeData(
