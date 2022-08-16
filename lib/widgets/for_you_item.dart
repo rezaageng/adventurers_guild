@@ -14,6 +14,7 @@ class ForYouItem extends StatelessWidget {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       elevation: 0,
+      margin: EdgeInsets.zero,
       child: LayoutBuilder(
         builder: (context, constraints) => Stack(
           children: [
