@@ -76,7 +76,12 @@ class _HomeState extends State<Home> {
       children: [
         const SearchBar(),
         Categories(onCategoryTap: _onCategoryChanged, stateCategory: _category),
-        ForYou(title: 'For You', destinations: _destinations),
+        ForYou(
+          title: 'For You',
+          destinations: _destinations,
+          physics: const NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+        ),
       ],
     );
   }

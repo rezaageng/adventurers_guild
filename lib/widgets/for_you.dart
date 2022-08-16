@@ -6,9 +6,16 @@ import 'for_you_item.dart';
 class ForYou extends StatelessWidget {
   final String? title;
   final List<DestinationsModel> destinations;
+  final ScrollPhysics? physics;
+  final bool shrinkWrap;
 
-  const ForYou({Key? key, this.title, required this.destinations})
-      : super(key: key);
+  const ForYou({
+    Key? key,
+    this.title,
+    required this.destinations,
+    this.physics = const BouncingScrollPhysics(),
+    this.shrinkWrap = false,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +34,8 @@ class ForYou extends StatelessWidget {
                 )
               : const SizedBox(),
           GridView.builder(
-            physics: const NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
+            physics: physics,
+            shrinkWrap: shrinkWrap,
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 240,
               childAspectRatio: 1,
