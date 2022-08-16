@@ -17,6 +17,7 @@ class Search extends StatefulWidget {
 
 class _SearchState extends State<Search> {
   late List<DestinationsModel> _destinations;
+  final _searchController = TextEditingController();
 
   List<DestinationsModel> _searchDestinations(query) {
     return destinationsData
@@ -31,16 +32,52 @@ class _SearchState extends State<Search> {
     _destinations = _searchDestinations(widget.searchQuery);
   }
 
+  void _onSearch(query) {
+    setState(() {
+      _destinations = _searchDestinations(query);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.searchQuery),
-      ),
-      body: Center(
-        child: ForYou(
-          destinations: _destinations,
+    return Listener(
+      onPointerDown: (_) => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        appBar: AppBar(
+          title: SizedBox(
+            height: 36,
+            child: TextField(
+              controller: _searchController,
+              onSubmitted: (_) => _onSearch(_searchController.text),
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.all(8),
+                hintText: 'Search',
+                filled: true,
+                fillColor: Theme.of(context).cardTheme.color,
+                suffixIcon: TextButton(
+                  onPressed: () => _onSearch(_searchController.text),
+                  style: TextButton.styleFrom(
+                      splashFactory: NoSplash.splashFactory),
+                  child: Icon(Icons.search_rounded,
+                      color: Theme.of(context).colorScheme.secondary),
+                ),
+                border: OutlineInputBorder(
+                  borderSide: BorderSide.none,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+          ),
+          centerTitle: true,
         ),
+        body: _destinations.isNotEmpty
+            ? ForYou(
+                destinations: _destinations,
+              )
+            : const Center(
+                child: Text('Destinations not found 🥲'),
+              ),
       ),
     );
   }
