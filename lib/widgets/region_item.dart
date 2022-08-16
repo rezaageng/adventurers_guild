@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import '../helpers/helpers.dart';
 import '../models/destinations_model.dart';
 
-class Region extends StatelessWidget {
+class RegionItem extends StatelessWidget {
   final ERegions title;
   final String image;
   final MaterialColor color;
 
-  const Region({
+  const RegionItem({
     Key? key,
     required this.title,
     required this.image,

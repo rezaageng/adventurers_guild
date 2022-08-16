@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/destinations_model.dart';
-import '../widgets/region.dart';
+import '../widgets/region_item.dart';
 
 class Explore extends StatelessWidget {
   const Explore({Key? key}) : super(key: key);
@@ -18,17 +18,17 @@ class Explore extends StatelessWidget {
           mainAxisSpacing: 16,
         ),
         children: const [
-          Region(
+          RegionItem(
             title: ERegions.mondstadt,
             image: 'assets/images/wind_rise.png',
             color: Colors.teal,
           ),
-          Region(
+          RegionItem(
             title: ERegions.liyue,
             image: 'assets/images/qingyun_peak.png',
             color: Colors.amber,
           ),
-          Region(
+          RegionItem(
             title: ERegions.inazuma,
             image: 'assets/images/mt_yougou.png',
             color: Colors.purple,
