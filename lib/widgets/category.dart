@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/destinations_model.dart';
 
 class Category extends StatelessWidget {
@@ -21,11 +22,17 @@ class Category extends StatelessWidget {
     required this.stateCategory,
   }) : super(key: key);
 
-  Color _getcolor(BuildContext context) {
+  Map<String, Color> _getcolor(BuildContext context) {
     if (stateCategory == category) {
-      return Theme.of(context).colorScheme.secondary;
+      return {
+        'bg': Theme.of(context).colorScheme.secondary,
+        'fg': Colors.white,
+      };
     } else {
-      return Theme.of(context).cardTheme.color as Color;
+      return {
+        'bg': Theme.of(context).cardTheme.color as Color,
+        'fg': Theme.of(context).textTheme.bodyMedium?.color as Color
+      };
     }
   }
 
@@ -34,7 +41,7 @@ class Category extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(left: marginLeft, right: marginRight),
       child: Material(
-        color: _getcolor(context),
+        color: _getcolor(context)['bg'],
         borderRadius: BorderRadius.circular(16),
         child: InkWell(
           enableFeedback: false,
@@ -44,9 +51,17 @@ class Category extends StatelessWidget {
             padding: const EdgeInsets.all(12),
             child: Row(
               children: [
-                Icon(icon),
+                Icon(
+                  icon,
+                  color: _getcolor(context)['fg'],
+                ),
                 const SizedBox(width: 8),
-                Text(title),
+                Text(
+                  title,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: _getcolor(context)['fg'],
+                      ),
+                ),
               ],
             ),
           ),
