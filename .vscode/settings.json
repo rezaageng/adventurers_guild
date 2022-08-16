@@ -7,6 +7,7 @@
     "helpers",
     "destination",
     "search",
-    "explore"
+    "explore",
+    "region"
   ]
 }

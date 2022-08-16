@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../helpers/helpers.dart';
 import '../models/destinations_model.dart';
+import '../screens/region.dart';
 
 class RegionItem extends StatelessWidget {
-  final ERegions title;
+  final ERegions region;
   final String image;
   final MaterialColor color;
 
   const RegionItem({
     Key? key,
-    required this.title,
+    required this.region,
     required this.image,
     required this.color,
   }) : super(key: key);
@@ -56,7 +57,7 @@ class RegionItem extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(12),
                 child: Text(
-                  Helpers.capitalize(title.name),
+                  Helpers.capitalize(region.name),
                   style: Theme.of(context).textTheme.headline6?.copyWith(
                         color: Colors.white,
                       ),
@@ -69,7 +70,11 @@ class RegionItem extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
                 child: Material(
                   color: Colors.transparent,
-                  child: InkWell(enableFeedback: false, onTap: () => {}),
+                  child: InkWell(
+                    enableFeedback: false,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(Region.routeName, arguments: region),
+                  ),
                 ),
               ),
             ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'navigations/bottom_navbar.dart';
 import 'screens/destination.dart';
+import 'screens/region.dart';
 import 'screens/search.dart';
 import 'theme/dark_theme.dart';
 import 'theme/light_theme.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         Destination.routeName: (context) => const Destination(),
         Search.routeName: (context) =>
             Search(ModalRoute.of(context)!.settings.arguments as String),
+        Region.routeName: (context) => const Region(),
       },
     );
   }

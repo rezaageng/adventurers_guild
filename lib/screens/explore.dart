@@ -19,17 +19,17 @@ class Explore extends StatelessWidget {
         ),
         children: const [
           RegionItem(
-            title: ERegions.mondstadt,
+            region: ERegions.mondstadt,
             image: 'assets/images/wind_rise.png',
             color: Colors.teal,
           ),
           RegionItem(
-            title: ERegions.liyue,
+            region: ERegions.liyue,
             image: 'assets/images/qingyun_peak.png',
             color: Colors.amber,
           ),
           RegionItem(
-            title: ERegions.inazuma,
+            region: ERegions.inazuma,
             image: 'assets/images/mt_yougou.png',
             color: Colors.purple,
           )
