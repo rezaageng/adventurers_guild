@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'navigations/bottom_navbar.dart';
 import 'screens/destination.dart';
+import 'screens/search.dart';
 import 'theme/dark_theme.dart';
 import 'theme/light_theme.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const BottomNavbar(),
         Destination.routeName: (context) => const Destination(),
+        Search.routeName: (context) => const Search(),
       },
     );
   }

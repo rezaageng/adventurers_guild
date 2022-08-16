@@ -5,6 +5,7 @@
     "home",
     "models",
     "helpers",
-    "destination"
+    "destination",
+    "search"
   ]
 }
