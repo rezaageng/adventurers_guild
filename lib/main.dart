@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const BottomNavbar(),
         Destination.routeName: (context) => const Destination(),
-        Search.routeName: (context) => const Search(),
+        Search.routeName: (context) =>
+            Search(ModalRoute.of(context)!.settings.arguments as String),
       },
     );
   }

@@ -79,6 +79,13 @@ class _HomeState extends State<Home> {
           const SearchBar(),
           Categories(
               onCategoryTap: _onCategoryChanged, stateCategory: _category),
+          Container(
+            margin: const EdgeInsets.only(top: 16, left: 16, right: 16),
+            child: Text(
+              'For You',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+          ),
           ForYou(
             title: 'For You',
             destinations: _destinations,
