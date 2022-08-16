@@ -1,6 +1,6 @@
-import 'package:adventurers_guild/helpers/helpers.dart';
 import 'package:flutter/material.dart';
 
+import '../helpers/helpers.dart';
 import '../models/destinations_model.dart';
 import '../screens/destination.dart';
 
