@@ -19,10 +19,15 @@ class Destination extends StatelessWidget {
         children: [
           Icon(
             icon,
+            color: Colors.white,
           ),
           const SizedBox(width: 8),
           Text(
             title,
+            style: Theme.of(context)
+                .textTheme
+                .bodyMedium
+                ?.copyWith(color: Colors.white),
           ),
         ],
       ),
