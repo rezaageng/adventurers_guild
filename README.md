@@ -8,3 +8,5 @@
 In teyvat you can become an adventurer by joining **Adventurers' Guild**. You can explore all the places around Teyvat
 
 **Download [Here](https://github.com/rezaageng/adventurers_guild/releases)**
+
+> ⚠️ This branch uses network to get image for reduce project size
