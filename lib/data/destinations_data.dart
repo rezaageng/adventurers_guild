@@ -181,4 +181,14 @@ List<DestinationsModel> destinationsData = [
     duration: 236,
     imageUrl: 'assets/images/mt_aocang_cliff.png',
   ),
+  const DestinationsModel(
+    id: 'des18',
+    title: 'Golden Apple Archipelago',
+    category: ECategories.islands,
+    region: ERegions.mondstadt,
+    description:
+        'The Golden Apple Archipelago is a limited time summer event area located east of Mondstadt that first appeared in Version 1.6 and appeared again in Version 2.8 in the Summertime Odyssey event with a different look. It was historically known as the Haar Islands before the events of Midsummer Island Adventure. This area contains a set of islands that the Dodo-King invited Klee to in the quest Mysterious Islands: Journey to the Unknown.',
+    duration: 3534,
+    imageUrl: 'assets/images/golden_apple.webp',
+  ),
 ];
