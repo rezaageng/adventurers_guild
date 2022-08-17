@@ -22,7 +22,7 @@ class ForYouItem extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               child: AspectRatio(
                 aspectRatio: 1,
-                child: Image.asset(
+                child: Image.network(
                   destination.imageUrl,
                   width: double.infinity,
                   fit: BoxFit.cover,

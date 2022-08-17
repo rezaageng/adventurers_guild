@@ -57,7 +57,7 @@ class Destination extends StatelessWidget {
               aspectRatio: 1,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16),
-                child: Image.asset(
+                child: Image.network(
                   destination.imageUrl,
                   fit: BoxFit.cover,
                 ),
